@@ -1,0 +1,470 @@
+/**
+ * TAMU-style header — matches the three-band masthead at
+ * digitalcollections.library.tamu.edu (maroon top bar / white identity / gray nav).
+ */
+
+:root {
+  --hdr-maroon: #500000;
+  --hdr-maroon-dark: #3c0000;
+  --hdr-gray-100: #f6f6f6;
+  --hdr-gray-200: #eaeaea;
+  --hdr-text: #3b4952;
+  --hdr-serif: Georgia, 'Times New Roman', 'Droid Serif', serif;
+  --hdr-worksans: 'Work Sans', Arial, sans-serif;
+  --hdr-max: 1140px;
+}
+
+/* ---------- 1. Institutional top bar ---------- */
+.tamu-top-bar {
+  background: var(--hdr-maroon-dark);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.tamu-top-bar__inner {
+  max-width: var(--hdr-max);
+  margin: 0 auto;
+  padding: 0.35rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tamu-top-bar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--hdr-serif);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.tamu-top-bar__brand svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: #fff;
+  flex: none;
+}
+
+.tamu-top-bar__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tamu-top-bar__link,
+.tamu-top-bar__button {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--hdr-serif);
+  font-style: italic;
+  font-size: 1rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.tamu-top-bar__link:hover,
+.tamu-top-bar__button:hover {
+  text-decoration: underline;
+}
+
+.tamu-top-bar__dropdown {
+  position: relative;
+}
+
+.tamu-top-bar__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tamu-top-bar__caret {
+  font-style: normal;
+  font-size: 0.7rem;
+}
+
+.tamu-top-bar__menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  min-width: 15rem;
+  background: #fff;
+  color: var(--hdr-text);
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  display: none;
+  z-index: 1100;
+}
+
+.tamu-top-bar__dropdown.is-open .tamu-top-bar__menu {
+  display: block;
+}
+
+.tamu-top-bar__menu a {
+  display: block;
+  padding: 0.4rem 1rem;
+  color: var(--hdr-maroon);
+  text-decoration: none;
+  font-family: var(--hdr-serif);
+  font-size: 0.95rem;
+}
+
+.tamu-top-bar__menu a:hover {
+  background: var(--hdr-gray-100);
+}
+
+/* ---------- 2. Site identity band ---------- */
+.tamu-site-identity {
+  background: #fff;
+  border-bottom: 1px solid var(--hdr-gray-200);
+}
+
+.tamu-site-identity__inner {
+  max-width: var(--hdr-max);
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tamu-site-identity__title a {
+  font-family: var(--hdr-worksans);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: #000;
+  text-decoration: none;
+}
+
+.tamu-site-identity__logo img {
+  height: 2.25rem;
+  width: auto;
+  display: block;
+}
+
+/* ---------- 3. Primary nav bar ---------- */
+.tamu-navbar {
+  background: #fff;
+  border-top: 2px solid rgb(209, 209, 209);
+  border-bottom: 2px solid rgb(209, 209, 209);
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+}
+
+.tamu-navbar__inner {
+  max-width: var(--hdr-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.tamu-navbar__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tamu-navbar__link {
+  display: block;
+  padding: 0.85rem 1rem;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: 100%;
+  font-kerning: auto;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.tamu-navbar__link:hover {
+  color: var(--hdr-maroon);
+}
+
+.tamu-navbar__link.is-active {
+  border-bottom-color: var(--hdr-maroon);
+}
+
+.tamu-navbar__toggle {
+  display: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .tamu-top-bar__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .tamu-top-bar__nav {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .tamu-site-identity__title a {
+    font-size: 1.3rem;
+  }
+
+  .tamu-navbar__inner {
+    padding: 0.4rem 1rem;
+  }
+
+  .tamu-navbar__toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: 1px solid var(--hdr-gray-200);
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .tamu-navbar__toggle-bar,
+  .tamu-navbar__toggle-bar::before,
+  .tamu-navbar__toggle-bar::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--hdr-maroon);
+  }
+
+  .tamu-navbar__toggle-bar {
+    position: relative;
+  }
+
+  .tamu-navbar__toggle-bar::before { position: absolute; top: -6px; }
+  .tamu-navbar__toggle-bar::after { position: absolute; top: 6px; }
+
+  .tamu-navbar__menu {
+    display: none;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+
+  .tamu-navbar__menu.is-open {
+    display: flex;
+  }
+
+  .tamu-navbar__link {
+    padding: 0.6rem 0.25rem;
+    border-bottom: 1px solid var(--hdr-gray-200);
+  }
+
+  .tamu-navbar__link.is-active {
+    border-bottom-color: var(--hdr-maroon);
+  }
+}
+
+/* ---------- 4. Footer ---------- */
+.tamu-footer {
+  background: var(--hdr-maroon);
+  color: #fff;
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.tamu-footer__inner {
+  max-width: var(--hdr-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.tamu-footer__col--brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tamu-footer__support-btn {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.125rem;
+  border: 2px solid #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background 0.2s ease, color 0.2s ease;
+  width: fit-content;
+}
+
+.tamu-footer__support-btn:hover {
+  background: #fff;
+  color: var(--hdr-maroon);
+}
+
+.tamu-footer__anniversary-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.tamu-footer__askus-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tamu-footer__askus-header img {
+  width: 80px;
+  height: 76px;
+}
+
+.tamu-footer__askus-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.tamu-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tamu-footer__links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: text-decoration 0.2s ease;
+}
+
+.tamu-footer__links a:hover {
+  text-decoration: underline;
+}
+
+.tamu-footer__arrow {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tamu-footer__links--nav {
+  margin-bottom: 1.5rem;
+}
+
+.tamu-footer__divider {
+  margin: 0 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tamu-footer__follow-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.tamu-footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.tamu-footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.tamu-footer__social a:hover {
+  opacity: 0.8;
+}
+
+.tamu-footer__social svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.tamu-footer__social svg path {
+  fill: currentColor;
+}
+
+/* Footer bar */
+.tamu-footer-bar {
+  background: var(--hdr-maroon-dark);
+  padding: 1rem 0;
+}
+
+.tamu-footer-bar__inner {
+  max-width: var(--hdr-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.tamu-footer-bar a {
+  color: #fff;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.tamu-footer-bar a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .tamu-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tamu-footer__askus-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tamu-footer-bar__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,620 @@
+/**
+ * Aggie Timeline — self-contained styles
+ * Extracted from the aggie-theme component library.
+ */
+
+:root {
+  --maroon-primary: #500000;
+  --maroon-dark: #3c0000;
+  --maroon-light: #651414;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--gray-900);
+  line-height: 1.6;
+  background-color: var(--white);
+}
+
+/* Timeline */
+.timeline {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Anniversary Brand Bar (Aggie UX logo-strip pattern) ---------- */
+
+.logo-strip {
+  width: 100%;
+  padding: 0.375rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-strip--light-gray {
+  background-color: #f5f5f5;
+}
+
+.logo-strip__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-strip__left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo-strip__left img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.dot-divider {
+  flex: 1 0 20px;
+  display: block;
+  border-top: dotted var(--maroon-primary) 3px;
+}
+
+.logo-strip__right {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo-strip__right a {
+  color: var(--maroon-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.logo-strip__right a:hover {
+  color: var(--maroon-dark);
+  text-decoration: underline;
+}
+
+.logo-strip__right a:focus {
+  outline: 2px solid var(--maroon-primary);
+  outline-offset: 2px;
+}
+
+/* ---------- Search section (Aggie UX landing page header pattern) ---------- */
+
+/* Hero container - full width */
+.hero {
+  position: relative;
+  margin: 0 calc(50% - 50vw) 2rem;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Hero image - narrower aspect ratio for reduced height */
+.hero__image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 20%; /* 5:1 aspect ratio - 50% reduction from standard */
+  overflow: hidden;
+}
+
+.hero__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Container that overlaps the bottom of the hero image */
+.hero__container {
+  position: relative;
+  margin-top: -80px;
+  z-index: 10;
+  padding: 0 1.5rem;
+}
+
+/* Content area - white background with padding */
+.hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2.5rem 2rem 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* SEARCH heading */
+.timeline-search-heading {
+  font-family: var(--hdr-serif), Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--maroon-primary);
+  text-align: left;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Search form row with maroon border */
+.timeline-search-form-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  border: 3px solid var(--maroon-primary);
+  background: var(--white);
+}
+
+/* Search input — grows to fill available space */
+.timeline-search-form-row .timeline-search-input-wrap {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.timeline-search-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--gray-300);
+  border-radius: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: var(--gray-900);
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.timeline-search-input::placeholder {
+  color: var(--gray-600);
+}
+
+.timeline-search-input:focus {
+  border-bottom-color: var(--maroon-primary);
+  outline: none;
+}
+
+/* Submit button — maroon block */
+.timeline-search-form-row .timeline-search-submit-wrap {
+  flex: 0 0 auto;
+}
+
+.timeline-search-submit {
+  border: none;
+  border-radius: 0;
+  height: 100%;
+  padding: 0 2.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--maroon-primary);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.timeline-search-submit:hover,
+.timeline-search-submit:focus {
+  background: var(--maroon-dark);
+  color: var(--white);
+  outline: none;
+}
+
+.timeline-no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--gray-600);
+  font-size: 1.125rem;
+}
+
+.timeline-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--maroon-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.timeline-subtitle {
+  font-size: 1.5rem;
+  color: var(--gray-600);
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.timeline-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.timeline-tab {
+  background-color: var(--white);
+  color: var(--maroon-primary);
+  border: 2px solid var(--maroon-primary);
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timeline-tab:hover {
+  background-color: var(--maroon-light);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-tab-active {
+  background-color: var(--maroon-primary);
+  color: var(--white);
+}
+
+.timeline-tab-active:hover {
+  background-color: var(--maroon-dark);
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-section {
+  display: none;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.timeline-section-active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1024px) {
+  .timeline-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+}
+
+/* ---------- Featured Card (Aggie UX) ---------- */
+
+.card.card--featured {
+  background-color: var(--white);
+  background-clip: border-box;
+  border-top: 2px solid rgb(60, 0, 0);
+  border-right: 2px solid rgb(60, 0, 0);
+  border-bottom: 2px solid rgb(60, 0, 0);
+  border-left: 2px solid rgb(60, 0, 0);
+  border-radius: 0.5rem;
+  border-image: none;
+  -webkit-border-image: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.card.card--featured:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card--featured .card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: var(--gray-100);
+}
+
+.card--featured .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.card--featured .card__content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--featured .heading-group {
+  margin-bottom: 1rem;
+}
+
+.card--featured .superhead {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--maroon-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.card--featured h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.card--featured p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+/* ---------- Linked Card (Aggie UX) ---------- */
+
+.linked-card {
+  position: relative;
+  background-color: var(--white);
+  background-clip: border-box;
+  border-top: 2px solid rgb(60, 0, 0);
+  border-right: 2px solid rgb(60, 0, 0);
+  border-bottom: 2px solid rgb(60, 0, 0);
+  border-left: 2px solid rgb(60, 0, 0);
+  border-radius: 0.5rem;
+  border-image: none;
+  -webkit-border-image: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.linked-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: var(--maroon-primary);
+}
+
+.linked-card:hover .link-arrow {
+  transform: translate(4px, -4px);
+}
+
+.link-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.45rem;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background: var(--white);
+  border-left: 2px solid var(--maroon-primary);
+  border-bottom: 2px solid var(--maroon-primary);
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.25rem;
+  color: var(--maroon-primary);
+  transition: transform 0.2s ease;
+}
+
+.link-arrow svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.linked-card .card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: var(--gray-100);
+}
+
+.linked-card .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.linked-card__content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.linked-card__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.linked-card__link:hover h3 {
+  color: var(--maroon-primary);
+  text-decoration: underline;
+}
+
+.linked-card .heading-group {
+  margin: 0;
+}
+
+.linked-card .superhead {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--maroon-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.linked-card h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--gray-900);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.linked-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.timeline-error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--gray-600);
+  background-color: var(--gray-50);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .timeline-tabs {
+    gap: 0.5rem;
+  }
+
+  .timeline-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .timeline-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-search-input {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .hero__container {
+    margin-top: -60px;
+    padding: 0 1rem;
+  }
+
+  .hero__content {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .timeline-search-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-search-submit {
+    padding: 0 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .logo-strip {
+    padding: 0.375rem 0;
+  }
+
+  .logo-strip__container {
+    padding: 0 1rem;
+    gap: 0.75rem;
+  }
+
+  .logo-strip__left img {
+    height: 24px;
+  }
+
+  .logo-strip__right a {
+    font-size: 0.875rem;
+  }
+}
