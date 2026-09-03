@@ -82,6 +82,17 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
                 />
               </div>
             </div>
+            <div class="timeline-search-sort-wrap">
+              <label for="timeline-search-sort" class="timeline-search-sort-label">Sort by:</label>
+              <select
+                id="timeline-search-sort"
+                class="timeline-search-sort"
+                aria-label="Sort search results"
+              >
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+              </select>
+            </div>
           </form>
         </div>
       </div>
@@ -316,6 +327,17 @@ function attachTimelineListeners(element, searchData = null) {
       let searchTimeout;
       const clearBtn = element.querySelector('.timeline-search-clear');
 
+      // Get sort select element
+      const sortSelect = element.querySelector('.timeline-search-sort');
+
+      // Helper: parse a date string into a comparable value (year as number)
+      // Falls back to extracting the first 4-digit year found
+      const parseDateValue = (dateStr) => {
+        if (!dateStr) return 0;
+        const match = dateStr.match(/(\d{4})/);
+        return match ? parseInt(match[1], 10) : 0;
+      };
+
       // Helper: run a search for the current input value
       const runSearch = () => {
         const query = searchInput.value.trim();
@@ -326,17 +348,11 @@ function attachTimelineListeners(element, searchData = null) {
             noResults,
             allTab,
             tabs,
-            sections
+            sections,
+            sortSelect,
           });
         } else if (query.length === 0) {
           clearSearch({ searchResultsSection, allTab, tabs, sections });
-        }
-      };
-
-      // Helper: update clear button visibility
-      const toggleClearBtn = () => {
-        if (clearBtn) {
-          clearBtn.style.display = query.length > 0 ? 'flex' : 'none';
         }
       };
 
@@ -360,6 +376,24 @@ function attachTimelineListeners(element, searchData = null) {
         });
       }
 
+      // Sort change — re-run the search with the new sort option
+      if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+          const query = searchInput.value.trim();
+          if (query.length >= 2 && searchResultsSection.style.display !== 'none') {
+            performSearch(query, searchData, element, {
+              searchResultsSection,
+              searchResultsCards,
+              noResults,
+              allTab,
+              tabs,
+              sections,
+              sortSelect,
+            });
+          }
+        });
+      }
+
       // Clear button — clears the search input and resets to normal view
       if (clearBtn) {
         clearBtn.addEventListener('click', () => {
@@ -377,7 +411,15 @@ function attachTimelineListeners(element, searchData = null) {
  * Performs a search and displays results
  */
 function performSearch(query, searchData, element, components) {
-  const { searchResultsSection, searchResultsCards, noResults, allTab, tabs, sections } = components;
+  const { searchResultsSection, searchResultsCards, noResults, allTab, tabs, sections, sortSelect } = components;
+
+  // Helper: parse a date string into a comparable value (year as number)
+  // Falls back to extracting the first 4-digit year found
+  function parseDateValue(dateStr) {
+    if (!dateStr) return 0;
+    const match = dateStr.match(/(\d{4})/);
+    return match ? parseInt(match[1], 10) : 0;
+  }
 
   // Perform search
   const results = searchData.index.search(query, { limit: 100, enrich: true });
@@ -393,6 +435,19 @@ function performSearch(query, searchData, element, components) {
   });
 
   const resultDocs = Array.from(uniqueResults.values());
+
+  // Sort results by date (newest first by default)
+  resultDocs.sort((a, b) => {
+    const dateA = parseDateValue(a.date);
+    const dateB = parseDateValue(b.date);
+    return dateB - dateA;
+  });
+
+  // Reverse for "Oldest First" if selected
+  const sortOrder = sortSelect ? sortSelect.value : 'date-desc';
+  if (sortOrder === 'date-asc') {
+    resultDocs.reverse();
+  }
 
   if (resultDocs.length > 0) {
     // Show results
@@ -476,6 +531,16 @@ function performSearch(query, searchData, element, components) {
   });
   searchResultsSection.style.display = 'block';
   searchResultsSection.classList.add('timeline-section-active');
+}
+
+/**
+ * Parses a date string into a comparable year value.
+ * Extracts the first 4-digit year found for sorting.
+ */
+function parseDateValue(dateStr) {
+  if (!dateStr) return 0;
+  const match = dateStr.match(/(\d{4})/);
+  return match ? parseInt(match[1], 10) : 0;
 }
 
 /**
