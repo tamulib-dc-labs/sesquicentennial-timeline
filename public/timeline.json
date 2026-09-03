@@ -4,7 +4,7 @@
   "decades": [
     {
       "label": "1860s",
-      "year": "1860",
+      "year": "1860s",
       "events": [
         {
           "date": "July 2, 1862",
@@ -26,7 +26,7 @@
     },
     {
       "label": "1870s",
-      "year": "1870",
+      "year": "1870s",
       "events": [
         {
           "date": "April 17, 1871",
@@ -45,7 +45,7 @@
           "link": ""
         },
         {
-          "date": "June 20, 1871",
+          "date": "6/1871",
           "title": "Brazos County Selected as Campus Site",
           "description": "Brazos County is selected as the site of the college, which will be situated on 2,416 acres donated by citizens of the county",
           "image": "",
@@ -53,25 +53,9 @@
           "link": ""
         },
         {
-          "date": "1871",
-          "title": "Land Grant Revenue Generated",
-          "description": "Texas receives 180,000 acres of land under the Morrill Act. The land is sold at 75 cents per acre and proceeds invested in 7% gold frontier defense bonds yielding $174,000.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "March 9, 1875",
-          "title": "Board of Directors Established",
-          "description": "The Texas Legislature passes an act that establishes the Board of Directors as the governing body of the Agricultural and Mechanical College of Texas.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
           "date": "June 1, 1875",
           "title": "First Board Meeting Held",
-          "description": "The Board of Directors hold their first meeting in Bryan, Texas, with Governor Richard Coke serving as ex-officio chairman.",
+          "description": "After being established earlier that year by the Texas Legislature, the Agricultural and Mechanical College of Texas' Board of Directors hold their first meeting in Bryan, Texas, with Governor Richard Coke serving as ex-officio chairman.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -101,7 +85,7 @@
           "link": "https://texashistory.unt.edu/ark:/67531/metapth462096/m1/1/zoom/?q=commencement%20ceremony&resolution=1.7598565270859792&lat=4429.394578719556&lon=1584.0835485880098"
         },
         {
-          "date": "1877",
+          "date": "February 1877",
           "title": "College Station Post Office Established",
           "description": "The first College Station Post Office is established near the train depot.",
           "image": "",
@@ -119,7 +103,7 @@
         {
           "date": "1879",
           "title": "John Garland James Named President",
-          "description": "John Garland James is appointed President of the College. The faculty is reorganized and the curricula are reduced to 3 years.",
+          "description": "John Garland James is appointed President of the College. The faculty and curriculum is reorganized.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -128,7 +112,7 @@
     },
     {
       "label": "1880s",
-      "year": "1880",
+      "year": "1880s",
       "events": [
         {
           "date": "1880",
@@ -139,15 +123,23 @@
           "link": ""
         },
         {
-          "date": "July 19, 1883",
-          "title": "President Position Abolished",
-          "description": "Hardaway Hunt Dinwiddie appointed Chairman of the Faculty. The office of President is abolished.",
+          "date": "June 26, 1883",
+          "title": "James Reid Cole Named President",
+          "description": "After being appointed as Acting President earlier in the year, James Reid Cole served as President.",
           "image": "",
           "imageAlt": "",
           "link": ""
         },
         {
-          "date": "January 1887",
+          "date": "July 19, 1883",
+          "title": "President Position Abolished",
+          "description": "The office of President is abolished and days later, Hardaway Hunt Dinwiddie is elected Chairman of the Faculty.",
+          "image": "",
+          "imageAlt": "",
+          "link": ""
+        },
+        {
+          "date": "1887",
           "title": "Four-Year Curriculum Adopted",
           "description": "The Board of Directors abolishes preparatory classes and adopts the four year curriculum.",
           "image": "",
@@ -198,7 +190,7 @@
     },
     {
       "label": "1890s",
-      "year": "1890",
+      "year": "1890s",
       "events": [
         {
           "date": "July 1, 1890",
@@ -227,7 +219,7 @@
         {
           "date": "October 1, 1893",
           "title": "Battalion First Published",
-          "description": "The first issue of the Battalion is published. It contains the first use of the word \"fish\" to refer to freshman.",
+          "description": "The first issue of The Battalion is published. It contains the earliest known printed use of the word ‘fish’ to refer to Texas A&M freshmen.",
           "image": "https://newspaper.library.tamu.edu/images/iiif/batch_txa_batt_ver06%2Fdata%2Fsn86088544%2Fprint%2F1893100101%2F0003.jp2/1769,1807,1671,1004/full/0/default.jpg",
           "imageAlt": "Snippet from the Battalion with the use of the word \"Fish\"",
           "link": "https://newspaper.library.tamu.edu/lccn/sn86088544/1893-10-01/ed-1/seq-3/#words=Fish"
@@ -237,7 +229,7 @@
           "title": "Aggie Band Founded",
           "description": "The Aggie Band is established.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "A photograph of the first Aggie Band in a field with their instruments.",
           "link": ""
         },
         {
@@ -245,7 +237,7 @@
           "title": "First Football Game",
           "description": "First Aggie football game is played.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "A photograph of the first Aggie Football Team sitting in front of a doorway.",
           "link": ""
         },
         {
@@ -253,15 +245,7 @@
           "title": "First Yearbook Published",
           "description": "The first yearbook is published as the 'Olio.'",
           "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1897",
-          "title": "Graduating Dress Parade Begins",
-          "description": "The Graduating Dress Parade is held immediately after the graduation ceremony. This tradition would later become known as Final Review.",
-          "image": "",
-          "imageAlt": "",
+          "imageAlt": "A photograph of the Olio yearbook, with a green cover.",
           "link": ""
         },
         {
@@ -285,61 +269,45 @@
           "title": "First San Jacinto Day Celebration",
           "description": "The first known celebration of San Jacinto Day at Texas A&M occurs on April 21, 1899 with a field day for cadets. This celebration would eventually be associated with Muster.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "The front page of a program for the First Annual Field Day.",
           "link": ""
         }
       ]
     },
     {
       "label": "1900s",
-      "year": "1900",
+      "year": "1900s",
       "events": [
         {
           "date": "1900",
           "title": "First Summer Session",
-          "description": "First summer session is held; no further summer sessions are held until 1909.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
+          "description": "First summer session is held.",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1900-06-01/ed-1/seq-21/#words=Summer",
+          "imageAlt": "A portion of an article about the summer session in 1900.",
+          "link": "https://newspaper.library.tamu.edu/lccn/sn86088544/1900-06-01/ed-1/seq-21/#words=Summer"
         },
         {
-          "date": "November 27, 1902",
-          "title": "First Bonfire",
-          "description": "The first known bonfire celebrating the Texas A&M and University of Texas football game is held in Bryan.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "April 7, 1903",
+          "date": "July 1, 1902",
           "title": "David F. Houston Named President",
           "description": "David F. Houston is appointed president of the College.",
           "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "April 21, 1903",
-          "title": "Muster Tradition Begins",
-          "description": "Muster begins on April 21, 1903.",
-          "image": "",
-          "imageAlt": "",
+          "imageAlt": "Portrait of David F. Houston.",
           "link": ""
         },
         {
           "date": "1903",
-          "title": "Longhorn Yearbook First Published",
-          "description": "The first Longhorn published, which will become the annual yearbook.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
+          "title": "Long Horn Yearbook First Published",
+          "description": "The first Long Horn published, which will become the annual yearbook.",
+          "image": "https://bookreader.library.tamu.edu/book.php?id=yb1903&getbook=Go#page/n0/mode/2up",
+          "imageAlt": "Cover page of the 1903 yearbook.",
+          "link": "https://bookreader.library.tamu.edu/BookReader/BookReaderImages.php?zip=/mnt/yearbooks/yb1903/yb1903_jp2.zip&file=yb1903_jp2/yb1903_0007.jp2&scale=2&rotate=0"
         },
         {
-          "date": "1904",
+          "date": "1905",
           "title": "Kyle Field Established",
-          "description": "An athletic field is established by the College and called 'Kyle Field' by students to recognize Professor E. J. Kyle's involvement in establishing it. The Board of Director's officially names the athletic field 'Kyle Field' in 1956.",
+          "description": "An athletic field is established by the Agricultural and Mechanical College of Texas and is called \"Kyle Field\" by students to recognize Professor E.J. Kyle's involvement in its establishment. The Board of Directors officially named the athletic field \"Kyle Field\" in 1956.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "Early football game at the athletic field that would become Kyle Field.",
           "link": ""
         },
         {
@@ -347,23 +315,23 @@
           "title": "H. H. Harrington Named President",
           "description": "H. H. Harrington is appointed president of the College.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "Portrait of H. H. Harrington.",
           "link": ""
         },
         {
           "date": "1906",
           "title": "Yell Leaders First Mentioned",
           "description": "Yell Leaders are first mentioned in the Battalion in 1906. The first recorded Yell Leader is Tom Armstrong Adams in the 1908 Longhorn.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1906-10-31/ed-1/seq-2/",
+          "imageAlt": "A portion of an article describing yells and yell leaders.",
+          "link": "https://newspaper.library.tamu.edu/lccn/sn86088544/1906-10-31/ed-1/seq-2/"
         },
         {
-          "date": "1908",
+          "date": "September 1, 1908",
           "title": "Robert Teague Milner Named President",
           "description": "Robert Teague Milner is appointed president.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "A portrait of Robert T. Milner.",
           "link": ""
         },
         {
@@ -371,14 +339,14 @@
           "title": "First March to the Brazos",
           "description": "The first known March to the Brazos occurred. At this time, the March to the Brazos was known as the 'Hike'.",
           "image": "",
-          "imageAlt": "",
+          "imageAlt": "A photograph showing cadets hiking in the woods.",
           "link": ""
         }
       ]
     },
     {
       "label": "1910s",
-      "year": "1910",
+      "year": "1910s",
       "events": [
         {
           "date": "1911",
@@ -399,21 +367,13 @@
         {
           "date": "1911",
           "title": "First Yell Practice",
-          "description": "The first known Yell Practice is held.",
+          "description": "First report of Aggies gathering to practice yells under the leadership of a yell leader occurs, although references to “practicing yells” can be found as early as 1899.",
           "image": "",
           "imageAlt": "",
           "link": ""
         },
         {
-          "date": "August 18, 1913",
-          "title": "Charles Puryear Named Acting President",
-          "description": "Charles Puryear is appointed acting president.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "September 25, 1914",
+          "date": "August 25, 1914",
           "title": "William Bennet Bizzell Named President",
           "description": "William Bennet Bizzell is appointed president.",
           "image": "",
@@ -431,7 +391,15 @@
         {
           "date": "March 31, 1915",
           "title": "State Forester Office Created",
-          "description": "Texas legislature passes an act creating the office of State Forester. Jurisdiction over the state forestry activities is given to the Board of Directors of the Agricultural and Mechanical College of Texas.",
+          "description": "Texas legislature passes an act creating the office of State Forester. Jurisdiction over the state forestry activities is given to the Board of Directors of the Agricultural and Mechanical College of Texas. This later became the Texas Forest Service in 1926.",
+          "image": "",
+          "imageAlt": "",
+          "link": ""
+        },
+        {
+          "date": "November 19, 1915",
+          "title": "First Bonfire",
+          "description": "Although bonfires had been previously held on campus to celebrate football victories, the tradition of holding a bonfire and rally before the University of Texas game begins in 1915.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -447,7 +415,7 @@
         {
           "date": "1915",
           "title": "First Use of \"Gig 'em\" in Print",
-          "description": "Earliest found use of “Gig ‘em” as part of the “Spell Yell” published in the 1915 yell book",
+          "description": "Earliest use of “Gig ‘em” in print as part of the “Spell Yell” published in the 1915 yell book",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -488,24 +456,8 @@
     },
     {
       "label": "1920s",
-      "year": "1920",
+      "year": "1920s",
       "events": [
-        {
-          "date": "1921",
-          "title": "First Radio Broadcast of Football Game",
-          "description": "First play-by-play of a college football game is broadcast over the radio by cadets.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1920",
-          "title": "Senior Boots Officially Adopted",
-          "description": "Senior boots officially established as apart of the uniform in 1920.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
         {
           "date": "January 2, 1922",
           "title": "12th Man Tradition Begins",
@@ -515,17 +467,9 @@
           "link": ""
         },
         {
-          "date": "October 10, 1922",
-          "title": "Gig 'em' First Appears in Battalion",
-          "description": "First appearance of the phrase \"Gig 'em\" in the Battalion.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
           "date": "1923",
           "title": "School of Vocational Teaching Founded",
-          "description": "The School of Vocational Teaching is established",
+          "description": "The School of Vocational Teaching is established, a precursor to the College of Education.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -533,7 +477,7 @@
         {
           "date": "1924",
           "title": "Aggie Orchestra Officially Recognized",
-          "description": "The Aggie Orchestra was officially recognized in 1924. Before that, any orchestra performers were pulled from the College Band to play at events.",
+          "description": "The Aggie Orchestra was officially recognized in 1924.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -555,7 +499,7 @@
           "link": ""
         },
         {
-          "date": "September 1, 1925",
+          "date": "September 3, 1925",
           "title": "Thomas Otto Walton Named President",
           "description": "Thomas Otto Walton is appointed president.",
           "image": "",
@@ -572,16 +516,8 @@
         },
         {
           "date": "1925",
-          "title": "Spirit of Aggieland' Introduced",
+          "title": "'Spirit of Aggieland' Introduced",
           "description": "The 'Spirit of Aggieland' is introduced.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "May 12, 1926",
-          "title": "Texas Forest Service Organized",
-          "description": "Activities of the State Forester are organized into the Texas Forest Service and made a major division of the College.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -590,7 +526,7 @@
     },
     {
       "label": "1930s",
-      "year": "1930",
+      "year": "1930s",
       "events": [
         {
           "date": "1931",
@@ -609,17 +545,9 @@
           "link": ""
         },
         {
-          "date": "January 5, 1934",
-          "title": "Enrollment Limited to Men Only",
-          "description": "The Board of Directors limited enrollment at the College to men only.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
           "date": "1934",
           "title": "Aggie Ring Design Standardized",
-          "description": "The Aggie Ring design is standardized in 1934. The class of 1894 is credited with initiating the class ring.",
+          "description": "The Aggie Ring design is standardized in 1934.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -627,15 +555,7 @@
         {
           "date": "1934",
           "title": "AAU Recognition Received",
-          "description": "The association of American Universities recognizes the College.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "May 15, 1936",
-          "title": "First Ring Dance",
-          "description": "The first Ring Dance is held.",
+          "description": "The Association of American Universities recognizes the College.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -644,7 +564,7 @@
     },
     {
       "label": "1940s",
-      "year": "1940",
+      "year": "1940s",
       "events": [
         {
           "date": "1940",
@@ -665,15 +585,15 @@
         {
           "date": "April 21, 1942",
           "title": "Corregidor Muster",
-          "description": "Muster occurs on Corregidor Island during World War II.",
+          "description": "Muster roll call occurs on Corregidor Island during World War II.",
           "image": "",
           "imageAlt": "",
           "link": ""
         },
         {
-          "date": "April 18, 1944",
+          "date": "February 26, 1944",
           "title": "First Aggie Medal of Honor Recipient",
-          "description": "Lloyd H. Hughes becomes the first Aggie recipient of the Medal of Honor.",
+          "description": "Lloyd H. Hughes becomes the first Aggie recipient of the Medal of Honor, presented posthumously April 18, 1944.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -687,22 +607,6 @@
           "link": ""
         },
         {
-          "date": "June 6, 1944",
-          "title": "Rangers at Pointe du Hoc",
-          "description": "Lieutenant Colonel James Earl Rudder leads the 2nd Ranger Battalion of the 83rd Division up a 100 foot cliff at Pointe du Hoc on D-Day.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "November 14, 1944",
-          "title": "Research Foundation Established",
-          "description": "The Texas A&M Research Foundation is established.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
           "date": "1948",
           "title": "A&M University System Created",
           "description": "The Texas A&M University System is established by the Board of Directors. Gibb Gilchrist is named Chancellor. The System included North Texas Agricultural College, Tarleton Agricultural College, Prairie View College, Texas Agricultural Experiment Stations, and Texas Agricultural Extension Services.",
@@ -711,7 +615,7 @@
           "link": ""
         },
         {
-          "date": "July 9, 1948",
+          "date": "1948",
           "title": "Texas Engineering Extension Service Founded",
           "description": "The Texas Engineering Extension Service is established.",
           "image": "",
@@ -730,28 +634,12 @@
     },
     {
       "label": "1950s",
-      "year": "1950",
+      "year": "1950s",
       "events": [
         {
           "date": "June 3, 1950",
           "title": "Marion T. Harrington Named President",
           "description": "Marion T. Harrington is appointed president.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "October 6, 1950",
-          "title": "Ross Volunteers Escort Governor",
-          "description": "The Ross Volunteers escort Governor Alan Shiver into Kyle Field.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "November 9, 1950",
-          "title": "President Harrington Inaugurated",
-          "description": "President Marion T. Harrington is inaugurated at Kyle Field.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -768,30 +656,22 @@
           "date": "April 21, 1951",
           "title": "Memorial Student Center Dedicated",
           "description": "The Memorial Student Center is formally dedicated.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1952",
-          "title": "Reveille II Becomes Mascot",
-          "description": "Reveille II becomes new mascot. She begins living with the Quartermaster Corps and student Sam Netterville becomes her caretaker.",
-          "image": "",
-          "imageAlt": "",
+          "image": "MSC",
+          "imageAlt": "Cadets stand in front of the MSC during dedication",
           "link": ""
         },
         {
           "date": "1953",
           "title": "Aggie Honor Code Adopted",
           "description": "Aggie Honor Code begins to be adopted on campus on a limited basis. Professors and students had to decide unanimously to enforce the Honor Code for the duration of a given course.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn84009780/1953-04-01/ed-1/seq-1/#words=Honor+Code+honor+code",
+          "imageAlt": "The Texas Aggie telling about the Honor Code",
           "link": ""
         },
         {
-          "date": "1953",
-          "title": "Harrington Named Chancellor",
-          "description": "Marion T. Harrington '22 is appointed Chancellor of the A&M System. David Hitchens Morgan is appointed President of the College.",
+          "date": "September 1, 1953",
+          "title": "Morgan Appointed President",
+          "description": "David Hitchens Morgan is appointed President of the College.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -800,134 +680,102 @@
           "date": "1954",
           "title": "Corps Membership Made Optional",
           "description": "The Board of Directors decides that Corps of Cadets membership will be optional.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1954-09-17/ed-1/seq-1/",
+          "imageAlt": "Board approves measure to make Corps membership optional for students who want to take non military courses",
           "link": ""
         },
         {
           "date": "1954",
           "title": "Fish Camp Begins",
           "description": "Fish Camp program is held for the first time for incoming freshman. This program was initiated by YMCA Director J. Gordan Gay.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://www.txamfoundation.com/images/timeline/1950/1954-fish-camp-1.jpg",
+          "imageAlt": "Battalion advertising the services of the YMCA including a camp for fish",
           "link": ""
-        },
-        {
-          "date": "1955",
-          "title": "First Bonfire Fatality",
-          "description": "The first Bonfire related death occurred. A student was killed at the bonfire guard due to a vehicle accident.",
-          "image": "https://newspaper.library.tamu.edu/images/iiif/batch_txa_batt_ver197%2Fdata%2Fsn86088544%2Fprint%2F1955112901%2F0001.jp2/3054,2340,1672,1388/full/0/default.jpg",
-          "imageAlt": "Snippet from Newspaper Article Describing First Bonfire Related Death",
-          "link": "https://newspaper.library.tamu.edu/lccn/sn86088544/1955-11-29/ed-1/seq-1/#words=bonfire+death"
         },
         {
           "date": "December 3, 1957",
           "title": "John David Crow Wins Heisman",
-          "description": "John David Crow wins the Heisman Trophy.",
-          "image": "",
-          "imageAlt": "",
+          "description": "John David Crow is the first Aggie to win the Heisman Trophy.",
+          "image": "https://www.tshaonline.org/images/handbook/entries/CC/Crow_John%20David%20with%20Heisman.jpg",
+          "imageAlt": "John David Crow Holding his Heisman",
           "link": ""
         },
         {
-          "date": "1957",
-          "title": "Harrington Named President and System Head",
-          "description": "Marion T. Harrington '22 is appointed President of the College and the A&M System.",
-          "image": "",
-          "imageAlt": "",
+          "date": "September 1, 1957",
+          "title": "Harrington Named President",
+          "description": "Marion T. Harrington '22 is reappointed as President of the College.",
+          "image": "Marion T Harrington",
+          "imageAlt": "Harrington inside G Rollie White Coliseum",
           "link": ""
         },
         {
           "date": "1958",
           "title": "Two Years of Corps Required",
           "description": "The Board of Directors makes the decision that membership in the Cadet Corps is required for the first two years at A&M College.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn84009780/1958-01-01/ed-1/seq-1/#words=two+years+Two+Years+two-year",
+          "imageAlt": "Newspaper announcing the Board's decision to require two years of Corps membership",
           "link": ""
         },
         {
-          "date": "1959",
+          "date": "July 1, 1959",
           "title": "James Earl Rudder Named President",
           "description": "James Earl Rudder ’32 named President of Texas A&M.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1959",
-          "title": "E-2 Company Takes Over Reveille Care",
-          "description": "E-2 Company is formed to take over care of Reveille, replacing the 'A' Quartermaster",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1959",
-          "title": "Harrington Named System Chancellor",
-          "description": "Marion T. Harrington ’22 appointed Chancellor of the A&M System.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2019/06/Rudder-1964-Aggieland-Yearbook.jpg",
+          "imageAlt": "Yearbook photo of Earl Rudder",
           "link": ""
         }
       ]
     },
     {
       "label": "1960s",
-      "year": "1960",
+      "year": "1960s",
       "events": [
         {
           "date": "1962",
           "title": "Bryan Air Force Base Acquired",
           "description": "The Bryan Air Force Base is deeded to A&M, which operated as the Texas A&M Research and Extension Center before being dedicated as the Riverside Campus, and later RELLIS Campus.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://s3.us-west-2.amazonaws.com/cdn.txamfoundation.com/news/2020/October/Texas-A&M-Annex/Research-Annex---500x335.jpg",
+          "imageAlt": "The Air Force Base is leased to TAMC for dorm spaces for freshman cadets and also as a research annex",
           "link": ""
         },
         {
           "date": "1963",
           "title": "Women and African Americans Begin Enrolling",
           "description": "Women and African American students begin enrolling at Texas A&M University on a limited basis.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2023/02/2-Leroy-Sterling.jpg\n\nDr. Lee",
+          "imageAlt": "Picture of Leroy Sterling, one of the first black students at A&M\n\nPicture of Sonja Lee '66 studying in a vet lab",
           "link": ""
         },
         {
           "date": "1963",
           "title": "Renamed Texas A&M University",
           "description": "Texas Legislature renamed Texas A&M College to Texas A&M University.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1963-08-22/ed-1/seq-1/",
+          "imageAlt": "Announcement of name change and unveiling of \nthe new logo",
           "link": ""
         },
         {
           "date": "1965",
           "title": "Corps Membership Made Fully Optional",
           "description": "The Board of Directors decides that the Cadet Corps membership is optional.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1965-04-27/ed-1/seq-1/#words=College+of+Geosciences",
+          "imageAlt": "Newspaper headline announcing the news that Corps membership is optional",
           "link": ""
         },
         {
           "date": "1965",
           "title": "Liberal Arts, Science, and Geosciences Colleges Created",
-          "description": "The College of Liberal Arts, College of Science and College of Geosciences are established.",
-          "image": "",
-          "imageAlt": "",
+          "description": "The College of Liberal Arts, College of Science, and College of Geosciences are established.",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1965-10-13/ed-1/seq-4/#words=College+of+Liberal+Arts",
+          "imageAlt": "Schools are organized and article explains the departments to readers",
           "link": ""
         },
         {
-          "date": "1965",
+          "date": "September 1, 1965",
           "title": "Rudder Named System and University President",
           "description": "The Office of Chancellor abolished. James Earl Rudder '32 appointed President of Texas A&M System and assumed duties as President of the University.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1966",
-          "title": "Reveille III Becomes First Lady",
-          "description": "Reveille III becomes First Lady of Aggieland after Reveille II retires.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1965-09-02/ed-1/seq-1/",
+          "imageAlt": "Newspaper day after Rudder assumes the role of System president",
           "link": ""
         },
         {
@@ -948,110 +796,94 @@
         },
         {
           "date": "1969",
-          "title": "Record Bonfire Height",
-          "description": "Texas A&M momentarily broke the Guiness Record for world's tallest Bonfire in 1969, with a bonfire of 107 feet and 10 inches.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1969",
           "title": "Education and Architecture Colleges Created",
           "description": "The College of Education and the College of Architecture and Environmental Design are established.",
-          "image": "",
-          "imageAlt": "",
+          "image": "College of Education\n\nCollege of Architecture",
+          "imageAlt": "Collage promotional material for the College of Education\n\nStudent presenting Architectural sketches to professors",
           "link": ""
         }
       ]
     },
     {
       "label": "1970s",
-      "year": "1970",
+      "year": "1970s",
       "events": [
         {
-          "date": "1970",
+          "date": "November 1, 1970",
           "title": "Jack K. Williams Named President",
           "description": "Jack K. Williams '34 is appointed President",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://live.staticflickr.com/3332/3662233439_df7a366687_m.jpg",
+          "imageAlt": "Picture of Jack Williams",
           "link": ""
         },
         {
           "date": "1972",
           "title": "Naval ROTC Program Established",
           "description": "The Naval ROTC program is established at Texas A&M University, making the Corps of Cadets open to all branches of military service.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn84009780/1972-02-01/ed-1/seq-17/#words=Naval+ROTC",
+          "imageAlt": "Battalion Newspaper noting the establishment of Naval ROTC by Jack Williams",
           "link": ""
         },
         {
           "date": "1972",
           "title": "Campus Housing Opened to Women",
           "description": "Campus housing is opened to women.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://live.staticflickr.com/4069/4387105255_1a75f401be_n.jpg",
+          "imageAlt": "Female Students sitting in front of Krueger Hall",
           "link": ""
         },
         {
           "date": "1973",
-          "title": "Women's Athletics Program Founded",
-          "description": "The Women's Athletics program is established.",
-          "image": "",
-          "imageAlt": "",
+          "title": "Women's Sports Association Founded",
+          "description": "The Women's Sports Association is established.",
+          "image": "https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ftamu.sidearmsports.com%2Fimages%2F2022%2F11%2F5%2F70s.jpg&width=1416&type=webp",
+          "imageAlt": "Picture of the First A&M Volleyball team",
           "link": ""
         },
         {
           "date": "1974",
           "title": "Women Admitted to Corps",
           "description": "Texas A&M Corps of Cadets begins admitting women into the Corps.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2022/07/W1NoUniforms-2048x1275.jpg",
+          "imageAlt": "This photo from The Battalion shows a group of W-1 cadets in the fall of 1974, before they received their uniforms.",
           "link": ""
         },
         {
           "date": "1976",
-          "title": "Centennial Wood Carvings Unveiled",
-          "description": "Six A&M Centennial wood carvings by Sue and Rodney Hill are unveiled in the Memorial Student Center.",
+          "title": "Texas A&M Centennial",
+          "description": "Texas A&M celebrates its centennial",
           "image": "",
           "imageAlt": "",
           "link": ""
         },
         {
-          "date": "1977",
+          "date": "March 30, 1977",
           "title": "KAMU-FM Goes on Air",
           "description": "KAMU-FM went on the air.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://kamu.tamu.edu/wp-content/uploads/2025/02/JKW-768x753.jpg",
+          "imageAlt": "President WIlliams opens the first broadcast of KAMU FM",
           "link": ""
         },
         {
-          "date": "1977",
-          "title": "Williams Named Chancellor and Acting President",
-          "description": "Jack K. Williams ’34 is appointed Chancellor of the A&M System and Acting President of the University.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1977",
+          "date": "August 1, 1977",
           "title": "Jarvis E. Miller Named President",
           "description": "Jarvis E. Miller ’50 is appointed President.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://tytimm.tamu.edu/wp-content/uploads/sites/9/2022/06/Headshots_0024_Miller.jpg",
+          "imageAlt": "Portrait of President Miller",
           "link": ""
         },
         {
           "date": "1977",
           "title": "College of Medicine Begins",
-          "description": "The College of Medicine begins with a class of 32 students.",
-          "image": "",
-          "imageAlt": "",
+          "description": "The College of Medicine is established.",
+          "image": "https://medicine.tamu.edu/images/about/history.jpg",
+          "imageAlt": "Auditorium of medical students attending lecture",
           "link": ""
         },
         {
           "date": "December 5, 1979",
           "title": "Silver Taps Ceremony Standardized",
-          "description": "The Student Senate passes a bill changing Silver Taps ceremony to be help on the first Tuesday of every month at 10:30 PM.",
+          "description": "The Student Senate passes a bill changing Silver Taps ceremony to be held on the first Tuesday of every month at 10:30 PM.",
           "image": "",
           "imageAlt": "",
           "link": ""
@@ -1060,86 +892,54 @@
     },
     {
       "label": "1980s",
-      "year": "1980",
+      "year": "1980s",
       "events": [
         {
           "date": "1981",
           "title": "Galveston Campus Renamed",
           "description": "Texas Legislature renames Moody College to Texas A&M University at Galveston.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2019/06/image-637.png",
+          "imageAlt": "Seal of TAMUG",
           "link": ""
         },
         {
-          "date": "1981",
-          "title": "First Medical School Graduates",
-          "description": "The first Texas A&M College of Medicine class graduates.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1981",
+          "date": "September 1,1981",
           "title": "Frank E. Vandiver Named President",
           "description": "Frank E. Vandiver is appointed President.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://artsci.tamu.edu/history/_files/_images/_resources/dr-frank-vandiver.jpg",
+          "imageAlt": "President Vandiver sitting at his desk",
           "link": ""
         },
         {
-          "date": "1983",
-          "title": "First Faculty Senate Speaker",
-          "description": "Dr. John McDermott named the first Senate Speaker for the Faculty Senate.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1983",
+          "date": "1982",
           "title": "The Big Event Created",
-          "description": "Texas A&M Student Government creates 'The Big Event,' a service project benefitting the Bryan College Station community.",
-          "image": "",
-          "imageAlt": "",
+          "description": "Texas A&M students create 'The Big Event,' a service project benefitting the Bryan-College Station community.",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2022/03/Big-Event-from-1983.png",
+          "imageAlt": "An Aggie student during The Big Event in 1983.",
           "link": ""
         },
         {
           "date": "1982",
           "title": "Spirit of '02 Cannon First Fired",
           "description": "The Spirit of '02 cannon is first fired in 1982. The cannon begins being regularly used at games starting in 1984.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1984",
-          "title": "Reveille V Becomes First Lady",
-          "description": "Reveille V becomes First Lady of Aggieland following Reveille IV's retirement.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1985",
-          "title": "First Aggie in Space",
-          "description": "William Pailes becomes the first Aggie in space.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://s3.us-west-2.amazonaws.com/cdn.txamfoundation.com/Spirit/Fall-2021/time-capsule/baylee-griffin-2.jpg",
+          "imageAlt": "Picture of Cadets firing Cannon. ( I was unable to find anything from 1982 )",
           "link": ""
         },
         {
           "date": "1985",
           "title": "Corps Special Units Opened to Women",
-          "description": "Special units in the Corps and the Aggie Band are opened to women following a class-action lawsuit.",
-          "image": "",
-          "imageAlt": "",
+          "description": "Special units in the Corps and the Aggie Band are opened to women.",
+          "image": "https://s3.us-west-2.amazonaws.com/cdn2.txamfoundation.com/Spirit/summer-2022/quad/img2/the_quad_img22.jpg",
+          "imageAlt": "Mandy Schubert Scott '87 in her Ross Volunteer Uniform",
           "link": ""
         },
         {
           "date": "December 14, 1987",
           "title": "TAMU.edu Domain Registered",
           "description": "The internet domain 'tamu.edu' is registered.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://www.facebook.com/tamu/posts/20-years-ago-tamuedu-first-launched-online-take-a-look-back-at-what-the-internet/10153633860938172/",
+          "imageAlt": "TAMU facebook with multiple pictures from the website when it was first registered",
           "link": ""
         },
         {
@@ -1151,26 +951,34 @@
           "link": ""
         },
         {
-          "date": "1988",
+          "date": "September 1, 1988",
           "title": "William H. Mobley Named President",
           "description": "William H. Mobley is appointed President.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2020/03/Mobley.jpg",
+          "imageAlt": "Picture of President Mobley",
           "link": ""
         },
         {
           "date": "1989",
           "title": "System Expansion",
-          "description": "Chorpus Christi State University, Texas A&I University, and Laredo State University merge into the Texas A&M University System. The schools are renamed Texas A&M University-Corpus Christi, Texas A&M Kingsville, and Texas A&M International University, respectively.",
-          "image": "",
-          "imageAlt": "",
+          "description": "Corpus Christi State University, Texas A&I University, and Laredo State University join the Texas A&M University System. The schools are renamed Texas A&M University-Corpus Christi, Texas A&M Kingsville, and Texas A&M International University, respectively.",
+          "image": "https://newspaper.library.tamu.edu/lccn/sn84009780/1989-04-01/ed-1/seq-37/#words=Laredo+State+University",
+          "imageAlt": "A letter published by Chancellor Adkisson, showing support of the merger into the University system",
+          "link": ""
+        },
+        {
+          "date": "1989",
+          "title": "Italy Study Center Opens",
+          "description": "Texas A&M University opens the Santa Chiara Study Center in Castiglioni Fiorentino, Italy.",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2019/07/image-29.png",
+          "imageAlt": "Skyview of the Santa Chiara Center",
           "link": ""
         }
       ]
     },
     {
       "label": "1990s",
-      "year": "1990",
+      "year": "1990s",
       "events": [
         {
           "date": "1990",
@@ -1182,18 +990,10 @@
         },
         {
           "date": "1990",
-          "title": "Italy Study Center Opens",
-          "description": "Texas A&M University opens the Santa Chiara Study Center in Castiglioni Fiorentino, Italy. ( Correction opened 1989 )",
-          "image": "https://stories.tamu.edu/wp-content/uploads/2019/07/image-29.png",
-          "imageAlt": "Skyview of the Santa Chiara Center",
-          "link": ""
-        },
-        {
-          "date": "1990",
           "title": "West Texas State Joins System",
           "description": "West Texas State University joins the Texas A&M University System and is renamed West Texas A&M University.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://www.wtamu.edu/webres/Image/Site%20Pictures/About/history_presentday.jpg",
+          "imageAlt": "Students around the old WTSU logo with their buffalo horn hand signs",
           "link": ""
         },
         {
@@ -1205,14 +1005,6 @@
           "link": ""
         },
         {
-          "date": "September 16, 1991",
-          "title": "Mexico City Center Opens",
-          "description": "Texas A&M University opens a center in Mexico City.",
-          "image": "https://stories.tamu.edu/wp-content/uploads/2019/05/image-86.png",
-          "imageAlt": "A&M officials stand in front of the new center in Mexico City",
-          "link": ""
-        },
-        {
           "date": "1991",
           "title": "Bush Library Site Selected",
           "description": "Texas A&M selected as the site for the George Bush Presidential Library and Museum.",
@@ -1221,35 +1013,11 @@
           "link": ""
         },
         {
-          "date": "November 25, 1993",
-          "title": "Reveille VI Becomes First Lady",
-          "description": "Reveille VI becomes First Lady after Reveille V retired.",
-          "image": "https://reveille.tamu.edu/images/RevVI.jpg",
-          "imageAlt": "Revellie VI with maroon on white blanket",
-          "link": ""
-        },
-        {
-          "date": "1993",
-          "title": "Reveille VI Kidnapped",
-          "description": "Reveille VI is kidnapped and later returned unharmed.",
-          "image": "",
-          "imageAlt": "",
-          "link": ""
-        },
-        {
-          "date": "1993",
-          "title": "Corps Hall of Honor Established",
-          "description": "Corps of Cadets Hall of Honor is established.",
-          "image": "https://s3.us-west-2.amazonaws.com/cdn.corpsofcadets.org/events/hallofhonordecor2017-20-edited.jpg",
-          "imageAlt": "Medallion of Corps of Cadets Hall of Honor amongst candals. Inscribed in it is \"Corps Hall of Honor\" and below in drop cap style \"AMC\"",
-          "link": ""
-        },
-        {
-          "date": "February 25, 1994",
-          "title": "Big Eight Conference Invitation Accepted",
-          "description": "Texas A&M Board of Regents votes to accept the invitation to join the Big Eight Conference.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/1994_Big_12_logo.png?_=20250329234504",
-          "imageAlt": "First logo of the Big 12 when it changed from the Big 8.",
+          "date": "September 16, 1993",
+          "title": "Mexico City Center Opens",
+          "description": "Texas A&M University opens a center in Mexico City.",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2019/05/image-86.png",
+          "imageAlt": "A&M officials stand in front of the new center in Mexico City",
           "link": ""
         },
         {
@@ -1269,7 +1037,7 @@
           "link": ""
         },
         {
-          "date": "1996",
+          "date": "May 21, 1996",
           "title": "Olympic Torch Crosses Campus",
           "description": "The 1996 Olympic torch crosses the Texas A&M campus.",
           "image": "https://newspaper.library.tamu.edu/lccn/sn86088544/1996-06-03/ed-1/seq-3.pdf",
@@ -1301,7 +1069,7 @@
           "link": ""
         },
         {
-          "date": "December 12, 1997",
+          "date": "November 6, 1997",
           "title": "Bush Library Complex Dedicated",
           "description": "The George Bush Presidential Library Complex is dedicated.",
           "image": "https://stories.tamu.edu/wp-content/uploads/2018/12/Bush_Library_Dedication_2-1200.jpg",
@@ -1319,7 +1087,7 @@
         {
           "date": "1999",
           "title": "Vision 2020 Announced",
-          "description": "The Vision 2020 Task Force reveals plans to place Texas A&M in the Top 10 Public Academic Institutions by 2020.",
+          "description": "The Vision 2020 plan formally adopted.",
           "image": "https://stories.tamu.edu/wp-content/uploads/2020/12/featureissue_header40864.jpg",
           "imageAlt": "A graphic with the Vision of 2020 and a vision chart in the background",
           "link": ""
@@ -1336,7 +1104,7 @@
     },
     {
       "label": "2000s",
-      "year": "2000",
+      "year": "2000s",
       "events": [
         {
           "date": "2000",
@@ -1344,30 +1112,6 @@
           "description": "Lt. Gov. James R. 'Rick' Perry '72 becomes the first Aggie to serve as Governor of Texas.",
           "image": "https://www.nga.org/wp-content/uploads/2018/11/Rick_Perry_official_portrait_tight_crop.jpg",
           "imageAlt": "Picture of Governor Perry",
-          "link": ""
-        },
-        {
-          "date": "2000",
-          "title": "Silver Taps Monument and Muster Endowment",
-          "description": "The Class of 1995 donates a Silver Taps monument and the establishes a $50,000 Muster Endowment Fund.\nCorrection: The class of 1991 would donate the monument while the class of 1995 would establsih the fund.",
-          "image": "https://www.hmdb.org/Photos7/766/Photo766389.jpg?1227202344700PM",
-          "imageAlt": "Picture of the Siver Taps monument",
-          "link": ""
-        },
-        {
-          "date": "2000",
-          "title": "Turney Leonard's Ring Returned",
-          "description": "Medal of Honor winner Turney W. Leornard '42's Aggie Ring is returned to A&M campus 56 years after being found on a European battlefield.",
-          "image": "https://s3.us-west-2.amazonaws.com/cdn.txamfoundation.com/news/2021/May-/Medal-of-Honor/RS6204_Turney-42,-Leonard-Medal-of-Honor-by-Gabriel-Chmielewski-7-2010-(2)-hpr-500x335.jpg",
-          "imageAlt": "Aggie ring and Medal of Honor over a photo of Lt. Turney",
-          "link": ""
-        },
-        {
-          "date": "2001",
-          "title": "Reveille VII Becomes First Lady",
-          "description": "Reveille VII becomes First Lady after Reveille VI retires.",
-          "image": "https://s3.us-west-2.amazonaws.com/cdn2.txamfoundation.com/Spirit/spring-2024/cover-feature/img/rev7-img1-v2.png",
-          "imageAlt": "Picture of Rev VII barking",
           "link": ""
         },
         {
@@ -1403,11 +1147,11 @@
           "link": ""
         },
         {
-          "date": "2002",
+          "date": "August 1, 2002",
           "title": "Robert Gates Named President",
           "description": "Robert Gates becomes Texas A&M's 22nd President.",
-          "image": "",
-          "imageAlt": "",
+          "image": "https://stories.tamu.edu/wp-content/uploads/2025/10/20061207-gates-farewell-speaking.webp",
+          "imageAlt": "President Gates giving a speech",
           "link": ""
         },
         {
@@ -1427,37 +1171,21 @@
           "link": ""
         },
         {
-          "date": "2005",
-          "title": "Six Animal Cloning Milestone",
-          "description": "Texas A&M becomes the first academic institution to successfully clone six different animals.",
-          "image": "",
-          "imageAlt": "I couldn't find any other pictures besides the cat, maybe there is something in the battalion issues that haven't been digitized",
-          "link": ""
-        },
-        {
-          "date": "2007",
+          "date": "January 3, 2007",
           "title": "Dr. Elsa Murano Named President",
           "description": "Dr. Elsa Murano is appointed President of Texas A&M University.",
           "image": "https://thebatt.com/wp-content/uploads/2021/04/c6d8ef170ad68489b22f6fcbdfdde64a-898x1200.jpg",
           "imageAlt": "Portrait of Dr. Murano",
-          "link": ""
-        },
-        {
-          "date": "2008",
-          "title": "Reveille VIII Becomes First Lady",
-          "description": "Reveille VIII takes over as First Lady after Reveille VII retires.",
-          "image": "https://reveille.tamu.edu/images/RevVIII.jpg",
-          "imageAlt": "Picture of Rev VIII",
           "link": ""
         }
       ]
     },
     {
       "label": "2010s",
-      "year": "2010",
+      "year": "2010s",
       "events": [
         {
-          "date": "2010",
+          "date": "February 12,2010",
           "title": "Dr. R. Bowen Loftin Named President",
           "description": "Dr. R. Bowen Loftin '71 becomes Texas A&M University's 24th President.",
           "image": "https://artsci.tamu.edu/news/2024/10/_news-images/loftin-bowen-adjusting-bowtie-tamf-2024.jpg",
@@ -1465,19 +1193,11 @@
           "link": ""
         },
         {
-          "date": "2011",
+          "date": "2012",
           "title": "SEC Move Announced",
-          "description": "Texas A&M announces its departure from the Big 12 Conference. Texas A&M officially joins the Southeastern Conference on July 1, 2012.",
+          "description": "Texas A&M officially joins the Southeastern Conference.",
           "image": "https://12thman.tamu.edu/assets/img/2012-join-sec.jpg",
           "imageAlt": "Inaugural SEC season poster",
-          "link": ""
-        },
-        {
-          "date": "2012",
-          "title": "YMCA Building Reopens",
-          "description": "The YMCA Building reopens after renovations.",
-          "image": "",
-          "imageAlt": "",
           "link": ""
         },
         {
@@ -1489,27 +1209,11 @@
           "link": ""
         },
         {
-          "date": "January 4, 2013",
-          "title": "Cotton Bowl Championship Victory",
-          "description": "Texas A&M wins the Cotton Bowl Championship against University of Oklahoma.",
-          "image": "https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ftamu.sidearmsports.com%2Fimages%2F2013%2F1%2F5%2FPXOFBWZCDSJERUI.20130105051752.jpg&height=1100&type=webp",
-          "imageAlt": "A&M team holding up the Cotton Bowl Trophy",
-          "link": ""
-        },
-        {
-          "date": "August 12, 2013",
+          "date": "2013",
           "title": "Law School Joins System",
           "description": "The Texas Wesleyan Law School joins the Texas A&M University System. The school is renamed Texas A&M University Schol of Law.",
           "image": "https://stories.tamu.edu/wp-content/uploads/2020/12/law-school-building-twitter.jpg",
           "imageAlt": "Texas A&M school of law building in Fort Worth",
-          "link": ""
-        },
-        {
-          "date": "2013",
-          "title": "Joint Library Facility Opens",
-          "description": "The Joint Library Facility is opened at Texas A&M University's Riverside Campus. This library is shared by the Texas A&M University System and the University of Texas System.",
-          "image": "https://stories.tamu.edu/wp-content/uploads/2019/06/image-617.png",
-          "imageAlt": "Shelves from inside the JLF",
           "link": ""
         },
         {
@@ -1523,17 +1227,9 @@
         {
           "date": "May 1, 2015",
           "title": "Michael K. Young Named President",
-          "description": "Michael K. Young is announced as the 25th president of Texas A&M.",
+          "description": "Michael K. Young is appointed as the 25th president of Texas A&M.",
           "image": "https://www.law.tamu.edu/_assets/images/_profile-images/michael-k-young.png",
           "imageAlt": "Portrait of President Young",
-          "link": ""
-        },
-        {
-          "date": "2015",
-          "title": "Reveille IX Becomes First Lady",
-          "description": "Reveille IX officially takes over as First Lady after Reveille VIII retires.",
-          "image": "https://s3.us-west-2.amazonaws.com/cdn2.txamfoundation.com/Spirit/spring-2024/cover-feature/img/hero-v2-min.png",
-          "imageAlt": "Picture of Rev IX",
           "link": ""
         },
         {
@@ -1545,15 +1241,7 @@
           "link": ""
         },
         {
-          "date": "April 27, 2017",
-          "title": "Myles Garrett First Pick in NFL Draft",
-          "description": "Myles Garrett is the first Texas A&M player drafted as first pick in the NFL draft.",
-          "image": "https://stories.tamu.edu/wp-content/uploads/sites/4/2017/04/MylesSpotlight.jpg",
-          "imageAlt": "Myles Garret posing in his A&M jersey with NFL, A&M, and Cleveland Browns logo",
-          "link": ""
-        },
-        {
-          "date": "April 17, 2018",
+          "date": "April 21, 2018",
           "title": "Barbara Bush Laid to Rest",
           "description": "Barabara Bush, Former First Lady of the United States, is laid to rest at the Bush Presidential Library.",
           "image": "https://stories.tamu.edu/wp-content/uploads/sites/4/2018/04/BPB_social-1.jpg",
@@ -1564,7 +1252,7 @@
           "date": "December 6, 2018",
           "title": "President George H.W. Bush Laid to Rest",
           "description": "President George W. Bush is laid to rest at the Bush Presidential Library.",
-          "image": "https://www.up.com/about-us/history/heritage-fleet/commemorative/ghw-bush-4141/funeral-train-photos#college-station-texas",
+          "image": "https://www.up.com/content/dam/upcom/migration/uprr/corprel/documents/digitalmedia/img-up-heritage-41-am-lr.jpg",
           "imageAlt": "President Bush is carried off his train in College Station",
           "link": ""
         }
@@ -1572,18 +1260,10 @@
     },
     {
       "label": "2020s",
-      "year": "2020",
+      "year": "2020s",
       "events": [
         {
-          "date": "2021",
-          "title": "Reveille X Becomes First Lady",
-          "description": "Rev X is announced as First Lady following Reveille IX's retirement.",
-          "image": "https://www.tamu.edu/_files/images/traditions/reveille-portrait-tamu.jpg",
-          "imageAlt": "Portrait of Rev X",
-          "link": ""
-        },
-        {
-          "date": "2021",
+          "date": "June 1, 2021",
           "title": "Katherine Banks Named President",
           "description": "Katherine Banks is appointed President of the University.",
           "image": "https://stories.tamu.edu/wp-content/uploads/2021/03/dr-kathy-banks-scaled.jpeg",
