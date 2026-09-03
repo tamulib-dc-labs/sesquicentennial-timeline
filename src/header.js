@@ -8,6 +8,21 @@
  *   3. Light-gray primary nav bar     — site navigation (collapses to a toggle on mobile)
  */
 
+/**
+ * Escapes HTML special characters in a string to prevent XSS.
+ * @param {string} str - The string to escape
+ * @returns {string} The escaped string
+ */
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 const CHEVRON = `<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
   <path d="M60.98 0H13.5c-1.67 0-3.02 1.35-3.02 3.02s1.35 3.02 3.02 3.02h40.18L.89 58.84a3.018 3.018 0 0 0 0 4.27 3.018 3.018 0 0 0 4.27 0l52.79-52.79V50.5c0 1.67 1.35 3.02 3.02 3.02s3.02-1.35 3.02-3.02V3.02c0-1.67-1.35-3.02-3.02-3.02Z" style="stroke-width:0"/>
 </svg>`;
@@ -45,11 +60,11 @@ function dropdownHTML({ text, items }, idx) {
   return `
     <div class="tamu-top-bar__dropdown">
       <button type="button" class="tamu-top-bar__button" aria-expanded="false" aria-controls="${id}">
-        ${text}
+        ${escapeHtml(text)}
         <span class="tamu-top-bar__caret" aria-hidden="true">▾</span>
       </button>
       <ul class="tamu-top-bar__menu" id="${id}" role="menu">
-        ${items.map((i) => `<li role="none"><a role="menuitem" href="${i.href}" target="_blank" rel="noopener">${i.text}</a></li>`).join('')}
+        ${items.map((i) => `<li role="none"><a role="menuitem" href="${escapeHtml(i.href)}" target="_blank" rel="noopener">${escapeHtml(i.text)}</a></li>`).join('')}
       </ul>
     </div>`;
 }
@@ -79,7 +94,7 @@ export function createHeader({
         <span class="tamu-top-bar__wordmark">Texas A&amp;M University</span>
       </a>
       <nav class="tamu-top-bar__nav" aria-label="Institutional links">
-        ${topLinks.map((l) => `<a href="${l.href}" class="tamu-top-bar__link" target="_blank" rel="noopener">${l.text}</a>`).join('')}
+        ${topLinks.map((l) => `<a href="${escapeHtml(l.href)}" class="tamu-top-bar__link" target="_blank" rel="noopener">${escapeHtml(l.text)}</a>`).join('')}
         ${dropdowns.map(dropdownHTML).join('')}
       </nav>
     </div>
@@ -87,10 +102,10 @@ export function createHeader({
 
   <div class="tamu-site-identity">
     <div class="tamu-site-identity__inner">
-      <div class="tamu-site-identity__title"><a href="${siteHref}">${siteName}</a></div>
+      <div class="tamu-site-identity__title"><a href="${escapeHtml(siteHref)}">${escapeHtml(siteName)}</a></div>
       <div class="tamu-site-identity__logo">
         <a aria-label="Texas A&amp;M University" href="https://www.tamu.edu" target="_blank" rel="noopener">
-          <img alt="Texas A&amp;M University" src="${logoSrc}" />
+          <img alt="Texas A&amp;M University" src="${escapeHtml(logoSrc)}" />
         </a>
       </div>
     </div>
@@ -102,7 +117,7 @@ export function createHeader({
         <span class="tamu-navbar__toggle-bar"></span>
       </button>
       <ul class="tamu-navbar__menu" id="tamu-navbar-menu">
-        ${nav.map((l, i) => `<li><a class="tamu-navbar__link${i === 0 ? ' is-active' : ''}" href="${l.href}">${l.text}</a></li>`).join('')}
+        ${nav.map((l, i) => `<li><a class="tamu-navbar__link${i === 0 ? ' is-active' : ''}" href="${escapeHtml(l.href)}">${escapeHtml(l.text)}</a></li>`).join('')}
       </ul>
     </div>
   </nav>`;

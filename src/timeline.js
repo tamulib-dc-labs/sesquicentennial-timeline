@@ -1,6 +1,21 @@
 import FlexSearch from 'flexsearch';
 
 /**
+ * Escapes HTML special characters in a string to prevent XSS.
+ * @param {string} str - The string to escape
+ * @returns {string} The escaped string
+ */
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/**
  * Creates a timeline component with decade-based navigation and search
  * @param {Object} options - Configuration options
  * @param {string} options.title - The timeline title
@@ -33,6 +48,7 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
     <div class="hero">
       <div class="hero__image">
         <img src="https://digitalcollections.library.tamu.edu/iiif/2/4e8%2Fimage-att-academicbuilding-3423991149-f2d8d808f2-o-edit-5d81e941-6682-4ea0-922c-87122fe202a9.jp2/0,585,2567,1212/full/0/default.jpg" alt="Historic Texas A&M Academic Building">
+        <div class="hero__overlay"></div>
       </div>
       <div class="hero__container">
         <div class="hero__content">
@@ -78,11 +94,11 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
   const tabsHTML = decades.map((decade, index) => `
     <button
       class="timeline-tab ${index === 0 ? 'timeline-tab-active' : ''}"
-      data-decade="${decade.year}"
+      data-decade="${escapeHtml(decade.year)}"
       aria-selected="${index === 0 ? 'true' : 'false'}"
       role="tab"
     >
-      ${decade.label}
+      ${escapeHtml(decade.label)}
     </button>
   `).join('');
 
@@ -95,12 +111,12 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
       if (event.link) {
         const imageHTML = event.image ? `
           <div class="card__image">
-            <img alt="${event.imageAlt || event.title}" src="${event.image}">
+            <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
           </div>
         ` : '';
 
         return `
-          <div class="linked-card" data-event-id="${eventId}" data-decade="${decade.year}">
+          <div class="linked-card" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(decade.year)}">
             <span class="link-arrow" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,13 +124,13 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
             </span>
             ${imageHTML}
             <div class="linked-card__content">
-              <a href="${event.link}" class="linked-card__link" target="_blank" rel="noopener noreferrer" aria-label="${event.date} ${event.title}">
+              <a href="${escapeHtml(event.link)}" class="linked-card__link" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(event.date)} ${escapeHtml(event.title)}">
                 <div class="heading-group">
-                  <span class="superhead">${event.date}</span>
-                  <h3>${event.title}</h3>
+                  <span class="superhead">${escapeHtml(event.date)}</span>
+                  <h3>${escapeHtml(event.title)}</h3>
                 </div>
               </a>
-              <p>${event.description}</p>
+              <p>${escapeHtml(event.description)}</p>
             </div>
           </div>
         `;
@@ -123,20 +139,20 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
       // Featured card structure (for non-linked cards)
       const imageHTML = event.image ? `
         <div class="card__image">
-          <img alt="${event.imageAlt || event.title}" src="${event.image}">
+          <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
         </div>
       ` : '';
 
       return `
-        <div class="card card--featured" data-event-id="${eventId}" data-decade="${decade.year}">
+        <div class="card card--featured" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(decade.year)}">
           <div class="featured-container">
             ${imageHTML}
             <div class="card__content">
               <div class="heading-group heading-group--feature">
-                <span class="superhead">${event.date}</span>
-                <h2>${event.title}</h2>
+                <span class="superhead">${escapeHtml(event.date)}</span>
+                <h2>${escapeHtml(event.title)}</h2>
               </div>
-              <p>${event.description}</p>
+              <p>${escapeHtml(event.description)}</p>
             </div>
           </div>
         </div>
@@ -354,12 +370,12 @@ function performSearch(query, searchData, element, components) {
       if (event.link) {
         const imageHTML = event.image ? `
           <div class="card__image">
-            <img alt="${event.imageAlt || event.title}" src="${event.image}">
+            <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
           </div>
         ` : '';
 
         return `
-          <div class="linked-card" data-event-id="${eventId}" data-decade="${event.decadeYear}">
+          <div class="linked-card" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(event.decadeYear)}">
             <span class="link-arrow" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -367,13 +383,13 @@ function performSearch(query, searchData, element, components) {
             </span>
             ${imageHTML}
             <div class="linked-card__content">
-              <a href="${event.link}" class="linked-card__link" target="_blank" rel="noopener noreferrer" aria-label="${event.date} ${event.title}">
+              <a href="${escapeHtml(event.link)}" class="linked-card__link" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(event.date)} ${escapeHtml(event.title)}">
                 <div class="heading-group">
-                  <span class="superhead">${event.date}</span>
-                  <h3>${event.title}</h3>
+                  <span class="superhead">${escapeHtml(event.date)}</span>
+                  <h3>${escapeHtml(event.title)}</h3>
                 </div>
               </a>
-              <p>${event.description}</p>
+              <p>${escapeHtml(event.description)}</p>
             </div>
           </div>
         `;
@@ -382,20 +398,20 @@ function performSearch(query, searchData, element, components) {
       // Featured card structure (for non-linked cards)
       const imageHTML = event.image ? `
         <div class="card__image">
-          <img alt="${event.imageAlt || event.title}" src="${event.image}">
+          <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
         </div>
       ` : '';
 
       return `
-        <div class="card card--featured" data-event-id="${eventId}" data-decade="${event.decadeYear}">
+        <div class="card card--featured" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(event.decadeYear)}">
           <div class="featured-container">
             ${imageHTML}
             <div class="card__content">
               <div class="heading-group heading-group--feature">
-                <span class="superhead">${event.date}</span>
-                <h2>${event.title}</h2>
+                <span class="superhead">${escapeHtml(event.date)}</span>
+                <h2>${escapeHtml(event.title)}</h2>
               </div>
-              <p>${event.description}</p>
+              <p>${escapeHtml(event.description)}</p>
             </div>
           </div>
         </div>
