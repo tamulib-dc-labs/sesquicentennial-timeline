@@ -63,6 +63,16 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
                   aria-label="Search timeline events"
                 />
               </div>
+              <button
+                type="button"
+                class="timeline-search-clear"
+                aria-label="Clear search"
+                title="Clear search"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
               <div class="timeline-search-submit-wrap">
                 <input
                   type="submit"
@@ -304,6 +314,7 @@ function attachTimelineListeners(element, searchData = null) {
 
     if (searchInput && searchData) {
       let searchTimeout;
+      const clearBtn = element.querySelector('.timeline-search-clear');
 
       // Helper: run a search for the current input value
       const runSearch = () => {
@@ -322,10 +333,22 @@ function attachTimelineListeners(element, searchData = null) {
         }
       };
 
+      // Helper: update clear button visibility
+      const toggleClearBtn = () => {
+        if (clearBtn) {
+          clearBtn.style.display = query.length > 0 ? 'flex' : 'none';
+        }
+      };
+
       // Live (debounced) search as the user types
       searchInput.addEventListener('input', () => {
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(runSearch, 300);
+
+        // Toggle clear button based on input value
+        if (clearBtn) {
+          clearBtn.style.display = searchInput.value.length > 0 ? 'flex' : 'none';
+        }
       });
 
       // Submit via the Search button / Enter key
@@ -334,6 +357,16 @@ function attachTimelineListeners(element, searchData = null) {
           e.preventDefault();
           clearTimeout(searchTimeout);
           runSearch();
+        });
+      }
+
+      // Clear button — clears the search input and resets to normal view
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          clearTimeout(searchTimeout);
+          clearSearch({ searchResultsSection, allTab, tabs, sections });
+          clearBtn.style.display = 'none';
         });
       }
     }

@@ -263,6 +263,30 @@ body {
   outline: none;
 }
 
+/* Clear button — clears the search input */
+.timeline-search-clear {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.timeline-search-clear:hover,
+.timeline-search-clear:focus {
+  color: var(--maroon-primary);
+  outline: none;
+}
+
+.timeline-search-clear svg {
+  display: block;
+}
+
 /* Submit button — maroon block */
 .timeline-search-form-row .timeline-search-submit-wrap {
   flex: 0 0 auto;
