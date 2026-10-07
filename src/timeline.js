@@ -16,6 +16,23 @@ function escapeHtml(str) {
 }
 
 /**
+ * Builds the image block for a card. The image is shown whole (no cropping)
+ * over a blurred copy of itself so portraits, scans, and wide photos all fill
+ * the same frame.
+ * @param {Object} event - Timeline event
+ * @returns {string} HTML for the card image, or '' when there is no image
+ */
+function cardImageHTML(event) {
+  if (!event.image) return '';
+  const cssUrl = String(event.image).replace(/["\\\n\r]/g, encodeURIComponent);
+  return `
+    <div class="card__image" style="--card-image: url(&quot;${escapeHtml(cssUrl)}&quot;)">
+      <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}" loading="lazy">
+    </div>
+  `;
+}
+
+/**
  * Creates a timeline component with decade-based navigation and search
  * @param {Object} options - Configuration options
  * @param {string} options.title - The timeline title
@@ -130,11 +147,7 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
 
       // Linked card structure (for cards with links)
       if (event.link) {
-        const imageHTML = event.image ? `
-          <div class="card__image">
-            <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
-          </div>
-        ` : '';
+        const imageHTML = cardImageHTML(event);
 
         return `
           <div class="linked-card" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(decade.year)}">
@@ -158,11 +171,7 @@ export function createTimeline({ title = 'Timeline', subtitle = '', decades = []
       }
 
       // Featured card structure (for non-linked cards)
-      const imageHTML = event.image ? `
-        <div class="card__image">
-          <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
-        </div>
-      ` : '';
+      const imageHTML = cardImageHTML(event);
 
       return `
         <div class="card card--featured" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(decade.year)}">
@@ -456,11 +465,7 @@ function performSearch(query, searchData, element, components) {
 
       // Linked card structure (for cards with links)
       if (event.link) {
-        const imageHTML = event.image ? `
-          <div class="card__image">
-            <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
-          </div>
-        ` : '';
+        const imageHTML = cardImageHTML(event);
 
         return `
           <div class="linked-card" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(event.decadeYear)}">
@@ -484,11 +489,7 @@ function performSearch(query, searchData, element, components) {
       }
 
       // Featured card structure (for non-linked cards)
-      const imageHTML = event.image ? `
-        <div class="card__image">
-          <img alt="${escapeHtml(event.imageAlt || event.title)}" src="${escapeHtml(event.image)}">
-        </div>
-      ` : '';
+      const imageHTML = cardImageHTML(event);
 
       return `
         <div class="card card--featured" data-event-id="${escapeHtml(eventId)}" data-decade="${escapeHtml(event.decadeYear)}">
