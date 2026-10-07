@@ -290,6 +290,60 @@ function createSearchIndex(decades) {
   return { index, events };
 }
 
+const CARD_SELECTOR = '.linked-card, .card--featured';
+
+/**
+ * On hover-capable devices, descriptions are clamped to a few lines (see CSS).
+ * Hovering or focusing a card reveals the full text, letting the card grow
+ * down over the row below instead of pushing the grid around: a negative
+ * bottom margin equal to the extra height keeps the grid row the same size.
+ * @param {Element} element - The timeline container element
+ */
+function attachDescriptionExpand(element) {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  const expand = (card) => {
+    if (card.classList.contains('is-expanded')) return;
+    const description = card.querySelector('p');
+    if (!description) return;
+
+    const hiddenText = description.scrollHeight - description.clientHeight;
+    if (hiddenText <= 1) return;
+
+    // Cards stretch to the tallest in their row, so some already have free
+    // space below the description that the extra text can use.
+    const content = description.parentElement;
+    const padding = parseFloat(getComputedStyle(content).paddingBottom);
+    const freeSpace = content.getBoundingClientRect().bottom - padding
+      - description.getBoundingClientRect().bottom;
+
+    card.classList.add('is-expanded');
+    card.style.marginBottom = `${-Math.max(0, hiddenText - freeSpace)}px`;
+  };
+
+  const collapse = (card) => {
+    card.classList.remove('is-expanded');
+    card.style.marginBottom = '';
+  };
+
+  element.addEventListener('mouseover', (e) => {
+    const card = e.target.closest(CARD_SELECTOR);
+    if (card) expand(card);
+  });
+  element.addEventListener('mouseout', (e) => {
+    const card = e.target.closest(CARD_SELECTOR);
+    if (card && !card.contains(e.relatedTarget) && !card.contains(document.activeElement)) collapse(card);
+  });
+  element.addEventListener('focusin', (e) => {
+    const card = e.target.closest(CARD_SELECTOR);
+    if (card) expand(card);
+  });
+  element.addEventListener('focusout', (e) => {
+    const card = e.target.closest(CARD_SELECTOR);
+    if (card && !card.contains(e.relatedTarget) && !card.matches(':hover')) collapse(card);
+  });
+}
+
 /**
  * Attaches event listeners to timeline tabs and search
  * @param {Element} element - The timeline container element
@@ -298,6 +352,8 @@ function createSearchIndex(decades) {
 function attachTimelineListeners(element, searchData = null) {
   const tabs = element.querySelectorAll('.timeline-tab');
   const sections = element.querySelectorAll('.timeline-section');
+
+  attachDescriptionExpand(element);
 
   // Tab switching
   tabs.forEach(tab => {

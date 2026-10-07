@@ -605,9 +605,27 @@ body {
   margin-bottom: 1rem;
 }
 
-.linked-card__link:hover h3 {
+/* Stretch the heading link over the whole card so the image, description,
+   and arrow are clickable too. */
+.linked-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.linked-card:hover h3 {
   color: var(--maroon-primary);
   text-decoration: underline;
+}
+
+.linked-card:has(.linked-card__link:focus-visible) {
+  outline: dotted var(--gold, #af8846) 2px;
+  outline-offset: 3px;
+}
+
+.linked-card__link:focus-visible {
+  outline: none;
 }
 
 .linked-card .heading-group {
@@ -638,6 +656,37 @@ body {
   line-height: 1.6;
   color: var(--gray-700);
   margin: 0;
+}
+
+/* ---------- Description clamp (hover-capable devices) ----------
+ * Long descriptions are cut to four lines so one long entry doesn't stretch
+ * its whole row. Hover/focus shows the full text (see attachDescriptionExpand).
+ * Touch devices have no hover, so they always get the full description.
+ */
+
+@media (hover: hover) and (pointer: fine) {
+  .card--featured p,
+  .linked-card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+  }
+
+  .card--featured.is-expanded,
+  .linked-card.is-expanded {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .card--featured.is-expanded p,
+  .linked-card.is-expanded p {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: none;
+  }
 }
 
 .timeline-error {
